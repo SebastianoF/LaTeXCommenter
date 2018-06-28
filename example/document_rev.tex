@@ -1,0 +1,155 @@
+\documentclass[]{article}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{soul}
+\usepackage{verbatim}
+\usepackage[usenames, dvipsnames]{color}
+
+%opening
+\title{A simple example to compare  
+%c-start
+\color{Orange}
+\st{old and new}
+\color{ForestGreen}
+%c-end
+subsequent
+%c-start
+\color{Black}
+%c-end
+versions of a latex document}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+An example about the very simple method to provide old and new version of a \LaTeX text. The colour for the old text is orange the colour of the new one is in green. Suggestions are in orange between square brackets. Part of the text used for the example comes from the 
+%c-start
+\color{Orange}
+\st{interesting} [self evident]
+\color{Black}
+%c-end
+website \href{www.lipsum.com}{www.lipsum.com}, that explains what is Lorem Ipsum, and where does it come from.
+The history of Lorem Ipsum is here a Lorem Ipsum.
+Some sentences 
+%c-start
+\color{Orange}
+\st{are changed}
+\color{ForestGreen}
+%c-end
+have been 
+%c-start
+\color{Black}
+%c-end
+changed for the purposes of this example.
+
+%c-start
+\color{Orange}
+\noindent
+[Please add more text here]
+\color{Black}
+%c-end
+
+
+
+\end{abstract}
+
+\section{What is Lorem Ipsum?}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was 
+%c-start
+\color{Orange}
+\st{popularized in the sixties with Letraset sheets}
+\color{ForestGreen}
+%c-end
+popularised in the 1960s with the release of Letraset sheets 
+%c-start
+\color{Black}
+%c-end
+containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+\begin{figure}[ht]
+\centering
+\hspace{-0.5cm}
+\includegraphics[width=8.5cm]{figures/lorem_ipsum_figure.pdf}
+\caption{{\bf Some debate can go on about the equivalent of lorem ipsum for figures.} 
+In this case we chose a simple 
+%c-start
+\color{ForestGreen}
+%c-end
+empty rectangle 
+%c-start
+\color{Orange}
+\st{blue square}
+[corrected]
+\color{Black}
+%c-end
+representing a prototypical black and white image.}
+\label{fig:f2}
+\end{figure}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+\section{Where does it come from?}
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a 
+%c-start
+\color{ForestGreen}
+%c-end
+Latin
+%c-start
+\color{Orange}
+\st{German}
+\color{Black}
+%c-end
+professor at Hampden-Sydney College in 
+%c-start
+\color{ForestGreen}
+%c-end
+Virginia, 
+%c-start
+\color{Orange}
+\st{California,}
+\color{Black}
+%c-end
+looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+%c-start
+\color{ForestGreen}
+%c-end
+(The Extremes of Good and Evil) 
+%c-start
+\color{Orange}
+\st{(The Boundaries between good and bad) }
+[please follow the original translation]
+\color{Black}
+%c-end
+by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \rq\rq Lorem ipsum dolor sit amet..\lq\lq, comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \rq\rq de Finibus Bonorum et Malorum\lq\lq~by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+%c-start
+\noindent
+\color{Orange}
+\st{More information can be found on the website www.lipsum.com}
+[Already in the abstract]
+\color{Black}
+%c-end
+
+\section{How to remove the annotations?}
+The annotations can be removed  calling the python method 
+\begin{verbatim}
+python commenter.py -i document_rev.tex -o document.tex -comment
+\end{verbatim}
+To get it back, use instead
+\begin{verbatim}
+python commenter.py -i document.tex -o document_rev2.tex -uncomment
+\end{verbatim}
+
+\noindent
+This dummy example is part of -Github repo here-.
+
+\end{document}
