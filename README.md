@@ -1,6 +1,6 @@
 
 
-![](https://github.com/SebastianoF/LaTeXCommenter/blob/master/example/screenshot_comparison.pdf)
+![](https://github.com/SebastianoF/LaTeXCommenter/blob/master/example/screenshot_comparison.jpg)
 
 ## LaTeXCommenter
 
