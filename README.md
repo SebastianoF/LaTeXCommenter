@@ -18,4 +18,4 @@ See LaTeX packages [latexdiff](https://ctan.org/pkg/latexdiff), [ulem](https://c
 
 ## Acknowledgements
 
-+ This code is developed within my PhD studies at UCL. My studentship is supported by Wellcome / Engineering and Physical Sciences Research Council (EPSRC).
++ This code is developed within my PhD program at UCL. My studentship is supported by Wellcome / Engineering and Physical Sciences Research Council (EPSRC).
